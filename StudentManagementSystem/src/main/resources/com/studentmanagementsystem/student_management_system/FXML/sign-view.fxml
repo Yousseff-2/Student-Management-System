@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studentmanagementsystem.student_management_system.SignupController">
+    <stylesheets>
+        <URL value="@../Style/signup.css" />
+    </stylesheets>
+
+    <AnchorPane prefHeight="600.0" prefWidth="900.0">
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" styleClass="header" text="Sign Up" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="113.0" layoutY="89.0" text="Name:" AnchorPane.leftAnchor="113.0" AnchorPane.topAnchor="89.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <TextField fx:id="nameField" layoutX="200.0" layoutY="63.0" prefHeight="52.0" prefWidth="500.0" promptText="Enter your name" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="63.0" />
+
+        <Label layoutX="120.0" layoutY="151.0" text="Age:" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="151.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <TextField fx:id="ageField" layoutX="200.0" layoutY="139.0" prefHeight="52.0" prefWidth="500.0" promptText="Enter your age" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="139.0" />
+
+        <Label layoutX="113.0" layoutY="216.0" text="Major:" AnchorPane.leftAnchor="113.0" AnchorPane.topAnchor="216.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <ComboBox fx:id="majorComboBox" layoutX="200.0" layoutY="204.0" prefHeight="52.0" prefWidth="500.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="204.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="CS" />
+                    <String fx:value="IT" />
+                    <String fx:value="IS" />
+                    <String fx:value="General" />
+                    <String fx:value="Admin" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+
+        <Label layoutX="97.0" layoutY="298.0" text="Username:" AnchorPane.leftAnchor="97.0" AnchorPane.topAnchor="298.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <TextField fx:id="usernameField" layoutX="200.0" layoutY="286.0" prefHeight="52.0" prefWidth="500.0" promptText="Choose a username" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="286.0" />
+
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="370.0" text="Password:" AnchorPane.leftAnchor="107.0" AnchorPane.topAnchor="370.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <PasswordField fx:id="passwordField" layoutX="200.0" layoutY="358.0" prefHeight="52.0" prefWidth="500.0" promptText="Create a password" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="358.0" />
+
+        <Button layoutX="280.0" layoutY="461.0" onAction="#submit" prefWidth="100.0" styleClass="submit-button" text="Submit" />
+        <Button layoutX="508.0" layoutY="461.0" onAction="#cancel" prefWidth="100.0" styleClass="cancel-button" text="Cancel" />
+    </AnchorPane>
+</StackPane>

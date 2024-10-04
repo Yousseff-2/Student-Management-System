@@ -1,0 +1,85 @@
+.main-pane {
+    -fx-background-color: transparent; /* Make it transparent to show the image */
+    -fx-background-image: url("../images/studentdashboard.jpg"); /* Correct path */
+    -fx-background-size: cover; /* Cover the entire pane */
+    -fx-background-position: center; /* Center the image */
+    -fx-background-repeat: no-repeat; /* Prevent repeat */
+}
+StackPane {
+    -fx-background-color: #e8eef1;  /* Light neutral background for the admin view */
+}
+
+AnchorPane {
+    -fx-padding: 20;  /* Padding for consistent spacing */
+}
+
+/* Label styling */
+Label {
+    -fx-text-fill: #2d3e50;  /* Dark, formal blue-gray text for labels */
+    -fx-font-family: "Verdana", sans-serif;  /* Clean font for professional look */
+}
+
+Label#welcomeLabel {
+    -fx-text-fill: #1f2f46;  /* Darker, bold blue-gray for welcome message */
+    -fx-font-weight: bold;   /* Emphasize welcome message */
+    -fx-font-size: 30px;
+}
+
+Label#nameLabel, Label#usernameLabel {
+    -fx-text-fill: #2d4f6e;  /* Consistent dark blue for user details */
+    -fx-font-size: 20px;
+}
+
+/* Button styling */
+Button {
+    -fx-background-color: #2c82c9;  /* Deep blue background for buttons */
+    -fx-text-fill: white;  /* White text on buttons */
+    -fx-font-size: 16px;
+    -fx-font-family: "Verdana", sans-serif;
+    -fx-background-radius: 8;  /* Rounded corners */
+    -fx-pref-height: 40px;
+    -fx-cursor: hand;  /* Pointer on hover */
+    -fx-border-color: #1b4d72;  /* Subtle border to define buttons */
+    -fx-border-width: 2px;
+}
+
+Button:hover {
+    -fx-background-color: #21658b;  /* Darker shade of blue on hover */
+    -fx-border-color: #1f4d72;  /* Keep borders consistent on hover */
+}
+
+Button:focused {
+    -fx-background-color: #21658b;  /* Same color on focus */
+    -fx-border-color: #1f4d72;
+}
+
+/* Log out button specific styling */
+Button#logoutButton {
+    -fx-background-color: #d9534f;  /* Red background for the logout button */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+Button#logoutButton:hover {
+    -fx-background-color: #b52d2b;  /* Darker red on hover */
+}
+
+/* VBox styling for admin options */
+VBox {
+    -fx-background-color: #f5f9fc;  /* Light blue-gray for the admin option panel */
+    -fx-padding: 15;  /* Slightly larger padding for a clean look */
+    -fx-background-radius: 10;
+    -fx-border-color: #dce1e7;  /* Soft border around VBox */
+    -fx-border-width: 2;
+}
+
+/* Specific VBox button styling */
+VBox Button {
+    -fx-pref-width: 210;  /* Set consistent width for buttons */
+    -fx-background-color: #3c9dc9;  /* Slightly lighter blue for sidebar buttons */
+    -fx-text-fill: white;
+}
+
+VBox Button:hover {
+    -fx-background-color: #2a7da3;  /* Hover effect for sidebar buttons */
+}
