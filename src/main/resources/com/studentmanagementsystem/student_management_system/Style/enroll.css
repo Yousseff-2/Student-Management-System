@@ -1,0 +1,43 @@
+.main-pane {
+    -fx-background-color: transparent; /* Make it transparent to show the image */
+    -fx-background-image: url("../images/studentdashboard.jpg"); /* Correct path */
+    -fx-background-size: cover; /* Cover the entire pane */
+    -fx-background-position: center; /* Center the image */
+    -fx-background-repeat: no-repeat; /* Prevent repeat */
+}
+
+.main-pane {
+    -fx-padding: 20;
+}
+
+.header-label {
+    -fx-text-fill: #333333;
+}
+
+.label {
+    font-family: "Arial", sans-serif;
+    -fx-text-fill: #555555;
+    -fx-font-size: 18px;
+}
+
+.section-header {
+    -fx-text-fill: #007BFF;
+}
+
+.courses-list {
+    -fx-background-color: #ffffff;      /* Ensure this contrasts with your background */
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+}
+
+.back-button {
+    -fx-font-size: 14px;
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-padding: 8 15;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.0, 0, 1);
+}
+
+.back-button:hover {
+    -fx-background-color: red;
+}

@@ -1,0 +1,85 @@
+.root {
+    -fx-background-image: url("../images/signup.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-padding: 20px;
+}
+.anchor-pane {
+    -fx-background-color: #f4f4f4; /* Light background color */
+    -fx-padding: 20; /* Padding around the edges */
+}
+
+/* Header style */
+.header {
+    -fx-font-size: 36px; /* Font size for header */
+    -fx-font-weight: bold; /* Make header bold */
+    -fx-text-fill: #333; /* Dark text color */
+    -fx-padding: 10; /* Padding around header */
+    -fx-halignment: center; /* Center header */
+}
+
+/* Styles for Labels */
+.label {
+    -fx-font-size: 18px; /* Font size for labels */
+    -fx-text-fill: #555; /* Medium dark text color */
+    -fx-padding: 10; /* Padding around labels */
+}
+
+/* Styles for TextFields and PasswordFields */
+.text-field, .password-field {
+    -fx-padding: 10; /* Padding inside the fields */
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-background-color: #fff; /* White background */
+    -fx-font-size: 16px; /* Font size */
+    -fx-min-height: 40px; /* Minimum height for fields */
+}
+
+/* Styles for ComboBox */
+.combo-box {
+    -fx-padding: 10; /* Padding inside the combo box */
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-background-color: #fff; /* White background */
+    -fx-font-size: 16px; /* Font size */
+    -fx-min-height: 40px; /* Minimum height for combo boxes */
+}
+
+/* Styles for Submit Button */
+.submit-button {
+    -fx-background-color: #007bff; /* Bootstrap primary color */
+    -fx-text-fill: white; /* White text color */
+    -fx-padding: 10 20; /* Padding for button */
+    -fx-font-size: 16px; /* Font size */
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+}
+
+.submit-button:hover {
+    -fx-background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles for Cancel Button */
+.cancel-button {
+    -fx-background-color: #ff4d4d; /* Red background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-padding: 10 20; /* Padding for button */
+    -fx-font-size: 16px; /* Font size */
+    -fx-border-radius: 5; /* Rounded corners */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+}
+
+.cancel-button:hover {
+    -fx-background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Adjustments for button alignment */
+.button {
+    -fx-min-width: 100px; /* Minimum width for buttons */
+}
+
+/* General styles for alignment and spacing */
+.stack-pane {
+    -fx-alignment: center; /* Center content in StackPane */
+}

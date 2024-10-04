@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="606.0" prefWidth="906.0" styleClass="root" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.studentmanagementsystem.student_management_system.StudentDashboardController">
+   <stylesheets>
+      <URL value="@../Style/student.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="900.0" styleClass="main-pane">
+         <children>
+            <Label fx:id="welcomeLabel" layoutX="379.0" styleClass="header-label" text="Welcome!">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="24.0" layoutY="21.0" styleClass="label" text="Name:" />
+            <Label fx:id="userNameLabel" layoutX="24.0" layoutY="53.0" styleClass="label" text="Username:" />
+            <Label fx:id="majorLabel" layoutX="25.0" layoutY="86.0" styleClass="label" text="Major:" />
+
+            <Label layoutX="8.0" layoutY="141.0" styleClass="section-header" text="Enrolled Courses:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+
+            <!-- Search bar for Enrolled Courses -->
+            <TextField fx:id="courseSearchField" layoutY="175.0" onMouseClicked="#course" prefWidth="200.0" promptText="Search Courses" />
+
+            <TableView fx:id="coursesTableView" layoutX="3.0" layoutY="205.0" prefHeight="394.0" prefWidth="444.0">
+               <columns>
+                  <TableColumn fx:id="courseNameColumn" prefWidth="142.4000244140625" text="Course Name" />
+                  <TableColumn fx:id="courseCreditsColumn" prefWidth="104.80001831054688" text="Credits" />
+                  <TableColumn fx:id="courseremove" prefWidth="253.5999755859375" text="Remove" />
+               </columns>
+            </TableView>
+
+            <Button fx:id="enrollButton" layoutX="741.0" layoutY="86.0" onAction="#enroll" styleClass="button" text="Enroll in New Course" />
+
+            <Label layoutX="459.0" layoutY="141.0" styleClass="section-header" text="Grades Overview:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+
+            <TextField fx:id="gradesSearchField" layoutX="457.0" layoutY="175.0" onMouseClicked="#grade" prefWidth="200.0" promptText="Search Grades" />
+
+            <TableView fx:id="gradesTableView" layoutX="457.0" layoutY="204.0" prefHeight="394.0" prefWidth="486.0">
+               <columns>
+                  <TableColumn fx:id="gradeCourseColumn" prefWidth="138.4000244140625" text="Course" />
+                  <TableColumn fx:id="gradeCourseHours" prefWidth="172.0" text="Credits" />
+                  <TableColumn fx:id="gradeScoreColumn" prefWidth="189.5999755859375" text="Grade" />
+               </columns>
+            </TableView>
+
+            <Button fx:id="logout" layoutX="741.0" layoutY="21.0" mnemonicParsing="false" onAction="#logout" prefHeight="46.0" prefWidth="187.0" text="Log out" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
