@@ -31,12 +31,12 @@ The **Student Management System** is a Java-based desktop application designed t
 ## Prerequisites
 - **Java Development Kit (JDK)** 11 or higher (Java 21 is configured in the project).
 - **JavaFX SDK** (if not included with JDK).
-- **Database**: MySQL or PostgreSQL.
+- **Database**: MySQL.
  
 ## Dependencies
 Maven handles required dependencies. Key dependencies are:
 - **JavaFX**: For UI elements like `javafx-controls` and `javafx-fxml`.
-- **JDBC Driver**: For database connectivity (MySQL Connector or PostgreSQL JDBC).
+- **JDBC Driver**: For database connectivity (MySQL Connector).
 
 Dependencies are listed in `pom.xml`.
 
