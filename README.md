@@ -33,6 +33,12 @@ The **Student Management System** is a Java-based desktop application designed t
 - **JavaFX SDK** (if not included with JDK).
 - **Database**: MySQL or PostgreSQL.
  
+## Dependencies
+Maven handles required dependencies. Key dependencies are:
+- **JavaFX**: For UI elements like `javafx-controls` and `javafx-fxml`.
+- **JDBC Driver**: For database connectivity (MySQL Connector or PostgreSQL JDBC).
+
+Dependencies are listed in `pom.xml`.
 
 ## Database Schema
 
@@ -75,27 +81,3 @@ CREATE TABLE StudentCourses (
     FOREIGN KEY (Student_ID) REFERENCES Accounts(ID),
     FOREIGN KEY (Course_ID) REFERENCES Courses(Course_ID)
 );
-
-
-## Dependencies
-Maven handles required dependencies. Key dependencies are:
-- **JavaFX**: For UI elements like `javafx-controls` and `javafx-fxml`.
-- **JDBC Driver**: For database connectivity (MySQL Connector or PostgreSQL JDBC).
-
-Dependencies are listed in `pom.xml`. Here are the most important ones:
-
-```xml
-<dependencies>
-    <!-- JavaFX dependencies -->
-    <dependency>
-        <groupId>org.openjfx</groupId>
-        <artifactId>javafx-controls</artifactId>
-        <version>21</version>
-    </dependency>
-    <dependency>
-        <groupId>org.openjfx</groupId>
-        <artifactId>javafx-fxml</artifactId>
-        <version>21</version>
-    </dependency>
-    <!-- Add additional dependencies as needed -->
-</dependencies> 
